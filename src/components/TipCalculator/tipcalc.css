@@ -1,0 +1,158 @@
+.container{
+    background-color:#E0E2DB ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 90px auto;
+    gap: 40px;
+}
+
+.bill-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.number-of-people{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.info{
+    margin: 0;
+    color: #3D348B;
+}
+
+.instrustion{
+    color: black;
+}
+
+.right-col{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #3D348B;
+    border-radius: 1rem;
+    color: #91A6FF;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.right-col-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.people-number{
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+p{
+    color: #E0E2DB;
+    padding: 0;
+    margin: 0;
+}
+
+.small-print{
+    font-size: 0.8rem;
+    color: #91A6FF;
+
+}
+
+h2{
+    margin: 0;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;    
+}
+
+.reset{
+    background-color: #91A6FF;
+    color: #3D348B;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.reset:hover{
+    background-color: #E0E2DB;
+    color: #3D348B;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    color: #3D348B;
+    font-weight: 400;
+    text-align: right;
+}
+
+.tip-input{
+margin-top: -10px;
+}
+
+.icon{
+    position: absolute;
+    color: #3D348B;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.icon-2{
+    position: absolute;
+    color: #3D348B;
+    margin-top: 181px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px){
+
+    .container{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .info{
+        display: none;
+    }
+
+}

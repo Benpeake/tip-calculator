@@ -1,0 +1,26 @@
+.button{
+    background-color: #3D348B;
+    color: #E0E2DB;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.button:hover{
+    background-color: #91A6FF;
+    color: #3D348B;
+    cursor: pointer;
+}
+
+.button-selected{
+    background-color: #91A6FF;
+    color: #3D348B;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
