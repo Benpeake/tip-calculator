@@ -130,17 +130,18 @@ margin-top: -10px;
 .icon-2{
     position: absolute;
     color: #3D348B;
-    margin-top: 181px;
+    margin-top: 185px;
     margin-left: 10px;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1100px){
 
     .container{
         grid-template-columns: 1fr;
         width: 60%;
+        min-width: 350px;
     }
 
 }
