@@ -127,14 +127,29 @@ margin-top: -10px;
     font-size: 1.2rem;
 }
 
-.icon-2{
-    position: absolute;
-    color: #3D348B;
-    margin-top: 182px;
-    margin-left: 10px;
-    font-weight: 700;
-    font-size: 1.2rem;
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.currency-symbol {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #3D348B;
+}
+
+.currency-symbol2 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3D348B;
+}
+
+
 
 @media screen and (max-width: 1100px){
 

@@ -4,17 +4,17 @@ import './tipcalc.css'
 
 function TipCalculator () {
 
-    const [bill, setBill] = useState(0)
+    const [bill, setBill] = useState('')
     const [numOfPeople, setNumOfPeople] = useState(1)
     const [tipPercentage, setTipPercentage] = useState(0)
     const [tipTotalper, setTipTotalper] = useState(0)
     const [overallper, setOverallper] = useState(0)
 
-
+  
 //reset function
     function handleReset(event){
         event.preventDefault()
-        setBill(0)
+        setBill('')
         setNumOfPeople(1)
         setTipPercentage(0)
         document.querySelector('.tip-input').value = 0
@@ -53,7 +53,6 @@ useEffect(() =>{
     if (numOfPeople <= 0){
         setTipTotalper(0)
         setOverallper(0)
-        setTipPercentage(0)
     }
 
 }, [bill, numOfPeople, tipPercentage])
@@ -66,8 +65,9 @@ useEffect(() =>{
 
                     <div className='bill-input'>
                         <label htmlFor='bill-value'>Bill</label>
-                        <p className='icon'>£</p>
-                        <input id='bill-value' type='text' value={bill} onChange={changeBill} 
+                        <div className='input-container'>
+                         <span className='currency-symbol2'>£</span>
+                        <input id='bill-value' type='text' placeholder='0' value={bill} onChange={changeBill}
                         // only numbers
                         onInput={(e) =>{
                             e.target.value = e.target.value.replace(/[^0-9.]/g, '')
@@ -77,6 +77,7 @@ useEffect(() =>{
                           }
                         }}
                         />
+                        </div>
                     </div>
 
                     <div className='tip-percentage'>
@@ -90,8 +91,9 @@ useEffect(() =>{
                             <PercentageButtons tipPercentage={tipPercentage} handleTipPercentage={handleTipPercentage} value={50} text='50%'/>
                         </div>            
                     </div>
-                    
-                    <p className='icon-2'>%</p>
+
+                    <div className='input-container'>
+                    <span className='currency-symbol'>%</span>
                     <input onChange={handleTipPercentage} placeholder='other %' className='tip-input' type='text'
                         // only numbers
                         onInput={(e) =>{
@@ -102,14 +104,15 @@ useEffect(() =>{
                           }
                         }}
                     />
+                    </div>
                 
 
                     <div className='people-number'>
                         <div className='number-of-people'>
                             <label htmlFor='people'>Number of people</label>
-                            <p className='info'>can't be zero</p>
+
                         </div>
-                        <input id='people' type='text' placeholder='1' value={numOfPeople} onChange={changeNumOfPeople}
+                        <input id='people' type='text' value={numOfPeople} onChange={changeNumOfPeople}
                         // only numbers
                         onInput={(e) =>{
                             e.target.value = e.target.value.replace(/[^1-9]/g, '')
