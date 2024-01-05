@@ -6,4 +6,4 @@ A simple tip-split calculator made to help learn React fundamentals.
 
 ## Demo
 
-Here is a link to a <a href="" target="_blank" rel="noopener">live version</a>
+Here is a link to a <a href="https://tip-calculator-alpha-weld.vercel.app/" target="_blank" rel="noopener">live version</a>
